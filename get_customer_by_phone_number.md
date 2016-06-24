@@ -1,26 +1,25 @@
-# 登录
+# 获取用户当前积分（电话号码）
 ```
-	用于商户登录，并获取访问其他接口使用的token，在调用其他接口时都必须先获取token
+	该接口用于获取用户当前积分
 ```
 ## URL
 ```	
-   {BASE_URL}/services/tp/oauth
+   {BASE_URL}/services/tp/customer?phone_number=xxxxx
 ```
 ## Method
 ```	
-   POST
+   GET
 ```
 ## Headers
 ```
    content-type=application/json
+   authorization=bearer {access_token}
 ```
 
 ## Request
 ```
 	{
-		"username": "abc",
-		"password": "1234567",
-		"source":"kuanyi"
+		"coupon_no": "ezyCgOsRtnMZ"
 	}
 ```
 <table data-tablesaw-sortable>
@@ -32,21 +31,9 @@
             <th data-tablesaw-sortable-col>是否必填</th>
         </tr>
 		<tr>
-            <td>username</td>
+            <td>phone_number</td>
             <td>字符型</td>
-            <td>商户登录名称</td>
-            <td>是</td>
-        </tr>
-		<tr>
-            <td>password</td>
-            <td>字符型</td>
-            <td>密码</td>
-            <td>是</td>
-        </tr>
-		<tr>
-            <td>source</td>
-            <td>字符型</td>
-            <td>登录请求来源，如“kuanyi”</td>
+            <td>手机号码</td>
             <td>是</td>
         </tr>
     </thead>
@@ -67,10 +54,12 @@
 		}
 	},
 	"result": {
-		"enterprise_name": "满乐测试",
-		"access_token": "cc6d1a21-2bcc-462e-9e04-06b7352cae83",
-		"tp_access_token": "0ce7891c-d2e8-4714-b8e4-0a9e4f65215b"
-	}
+        "phone_number": "13800138000",
+        "name": "Alipp",
+        "birthday": "1990-10-07",
+        "gender": "male",
+        "points": 113
+    }
 }
 ```
 <table data-tablesaw-sortable>
@@ -93,22 +82,32 @@
 		<tr>
             <td>result</td>
             <td></td>
-            <td>返回的实际内容</td>
+            <td>返回内容</td>
         </tr>
 		<tr>
-            <td>enterprise_name</td>
+            <td>phone_number</td>
             <td>字符型</td>
-            <td>商户的名称</td>
+            <td>手机号码</td>
         </tr>
 		<tr>
-            <td>access_token</td>
+            <td>name</td>
             <td>字符型</td>
-            <td>登录的token，该token在所有的非登录接口中都要使用，作为身份认证</td>
+            <td>用户昵称</td>
         </tr>
 		<tr>
-            <td>tp_access_token</td>
+            <td>birthday</td>
             <td>字符型</td>
-            <td>嵌入页面使用的token</td>
+            <td>生日，格式:2016-01-01</td>
+        </tr>
+		<tr>
+            <td>gender</td>
+            <td>字符型</td>
+            <td>性别, 只能填male或者female</td>
+        </tr>
+		<tr>
+            <td>points </td>
+            <td>数字型</td>
+            <td>积分</td>
         </tr>
     </thead>
 <table>

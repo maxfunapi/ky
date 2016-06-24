@@ -1,10 +1,10 @@
-# 登录
+# 创建商户接口
 ```
-	用于商户登录，并获取访问其他接口使用的token，在调用其他接口时都必须先获取token
+	该接口用于创建商户接口
 ```
 ## URL
 ```	
-   {BASE_URL}/services/tp/oauth
+   {BASE_URL}/services/tp/merchant
 ```
 ## Method
 ```	
@@ -13,15 +13,22 @@
 ## Headers
 ```
    content-type=application/json
+   authorization=bearer {access_token}
 ```
 
 ## Request
 ```
 	{
-		"username": "abc",
-		"password": "1234567",
-		"source":"kuanyi"
-	}
+		"merchant_id": "10087",
+		"merchant_name": "alipp测试2",
+		"merchant_address": "深圳南山科技园",
+		"merchant_city": "深圳",
+		"create_time": "2016-03-24 17:21:40",
+		"password":"123456",
+		"login_name":"alipptest2",
+		"contact_number":"13800138000",
+		"merchant_group_id":246
+	 }
 ```
 <table data-tablesaw-sortable>
     <thead>
@@ -32,9 +39,27 @@
             <th data-tablesaw-sortable-col>是否必填</th>
         </tr>
 		<tr>
-            <td>username</td>
+            <td>merchant_id</td>
             <td>字符型</td>
-            <td>商户登录名称</td>
+            <td>商户ID</td>
+            <td>是</td>
+        </tr>
+		<tr>
+            <td>merchant_name</td>
+            <td>字符型</td>
+            <td>商户名称</td>
+            <td>是</td>
+        </tr>
+		<tr>
+            <td>merchant_address</td>
+            <td>字符型</td>
+            <td>地址</td>
+            <td>是</td>
+        </tr>
+		<tr>
+            <td>merchant_city</td>
+            <td>字符型</td>
+            <td>城市</td>
             <td>是</td>
         </tr>
 		<tr>
@@ -44,10 +69,28 @@
             <td>是</td>
         </tr>
 		<tr>
-            <td>source</td>
+            <td>login_name</td>
             <td>字符型</td>
-            <td>登录请求来源，如“kuanyi”</td>
+            <td>登录名</td>
             <td>是</td>
+        </tr>
+		<tr>
+            <td>contact_number</td>
+            <td>字符型</td>
+            <td>联系电话</td>
+            <td>是</td>
+        </tr>
+		<tr>
+            <td>merchant_group_id</td>
+            <td>字符型</td>
+            <td>merchant_group_id为空即新建一个新group</td>
+            <td>否</td>
+        </tr>
+		<tr>
+            <td>create_time</td>
+            <td>字符型</td>
+            <td>商户创建时间 格式为yyyy-MM-dd HH:mm:ss</td>
+            <td>否</td>
         </tr>
     </thead>
 <table>
@@ -66,11 +109,7 @@
 			"duration": 180
 		}
 	},
-	"result": {
-		"enterprise_name": "满乐测试",
-		"access_token": "cc6d1a21-2bcc-462e-9e04-06b7352cae83",
-		"tp_access_token": "0ce7891c-d2e8-4714-b8e4-0a9e4f65215b"
-	}
+	"result":"success"
 }
 ```
 <table data-tablesaw-sortable>
@@ -92,23 +131,8 @@
         </tr>
 		<tr>
             <td>result</td>
-            <td></td>
-            <td>返回的实际内容</td>
-        </tr>
-		<tr>
-            <td>enterprise_name</td>
             <td>字符型</td>
-            <td>商户的名称</td>
-        </tr>
-		<tr>
-            <td>access_token</td>
-            <td>字符型</td>
-            <td>登录的token，该token在所有的非登录接口中都要使用，作为身份认证</td>
-        </tr>
-		<tr>
-            <td>tp_access_token</td>
-            <td>字符型</td>
-            <td>嵌入页面使用的token</td>
+            <td>状态描述or success</td>
         </tr>
     </thead>
 <table>

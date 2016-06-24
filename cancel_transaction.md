@@ -1,10 +1,10 @@
-# 登录
+# 取消消费接口
 ```
-	用于商户登录，并获取访问其他接口使用的token，在调用其他接口时都必须先获取token
+	该接口用于取消消费接口
 ```
 ## URL
 ```	
-   {BASE_URL}/services/tp/oauth
+   {BASE_URL}/services/tp/cancel_transaction
 ```
 ## Method
 ```	
@@ -13,14 +13,13 @@
 ## Headers
 ```
    content-type=application/json
+   authorization=bearer {access_token}
 ```
 
 ## Request
 ```
 	{
-		"username": "abc",
-		"password": "1234567",
-		"source":"kuanyi"
+		"transaction_id":205276
 	}
 ```
 <table data-tablesaw-sortable>
@@ -32,21 +31,9 @@
             <th data-tablesaw-sortable-col>是否必填</th>
         </tr>
 		<tr>
-            <td>username</td>
-            <td>字符型</td>
-            <td>商户登录名称</td>
-            <td>是</td>
-        </tr>
-		<tr>
-            <td>password</td>
-            <td>字符型</td>
-            <td>密码</td>
-            <td>是</td>
-        </tr>
-		<tr>
-            <td>source</td>
-            <td>字符型</td>
-            <td>登录请求来源，如“kuanyi”</td>
+            <td>transaction_id</td>
+            <td>数字型</td>
+            <td>消费记录ID</td>
             <td>是</td>
         </tr>
     </thead>
@@ -67,10 +54,9 @@
 		}
 	},
 	"result": {
-		"enterprise_name": "满乐测试",
-		"access_token": "cc6d1a21-2bcc-462e-9e04-06b7352cae83",
-		"tp_access_token": "0ce7891c-d2e8-4714-b8e4-0a9e4f65215b"
-	}
+        "status": "success",
+        "msg": "success"
+    }
 }
 ```
 <table data-tablesaw-sortable>
@@ -93,22 +79,17 @@
 		<tr>
             <td>result</td>
             <td></td>
-            <td>返回的实际内容</td>
+            <td>返回内容</td>
         </tr>
 		<tr>
-            <td>enterprise_name</td>
+            <td>status</td>
             <td>字符型</td>
-            <td>商户的名称</td>
+            <td>状态描述error success</td>
         </tr>
 		<tr>
-            <td>access_token</td>
+            <td>msg</td>
             <td>字符型</td>
-            <td>登录的token，该token在所有的非登录接口中都要使用，作为身份认证</td>
-        </tr>
-		<tr>
-            <td>tp_access_token</td>
-            <td>字符型</td>
-            <td>嵌入页面使用的token</td>
+            <td>消息描述</td>
         </tr>
     </thead>
 <table>

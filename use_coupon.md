@@ -1,10 +1,10 @@
-# 登录
+# 使用优惠券
 ```
-	用于商户登录，并获取访问其他接口使用的token，在调用其他接口时都必须先获取token
+	该接口用于核销优惠券
 ```
 ## URL
 ```	
-   {BASE_URL}/services/tp/oauth
+   {BASE_URL}/services/tp/use_coupon
 ```
 ## Method
 ```	
@@ -13,14 +13,13 @@
 ## Headers
 ```
    content-type=application/json
+   authorization=bearer {access_token}
 ```
 
 ## Request
 ```
 	{
-		"username": "abc",
-		"password": "1234567",
-		"source":"kuanyi"
+		"coupon_no": "ezyCgOsRtnMZ"
 	}
 ```
 <table data-tablesaw-sortable>
@@ -32,21 +31,9 @@
             <th data-tablesaw-sortable-col>是否必填</th>
         </tr>
 		<tr>
-            <td>username</td>
+            <td>coupon_no</td>
             <td>字符型</td>
-            <td>商户登录名称</td>
-            <td>是</td>
-        </tr>
-		<tr>
-            <td>password</td>
-            <td>字符型</td>
-            <td>密码</td>
-            <td>是</td>
-        </tr>
-		<tr>
-            <td>source</td>
-            <td>字符型</td>
-            <td>登录请求来源，如“kuanyi”</td>
+            <td>优惠券唯一标示</td>
             <td>是</td>
         </tr>
     </thead>
@@ -66,11 +53,7 @@
 			"duration": 180
 		}
 	},
-	"result": {
-		"enterprise_name": "满乐测试",
-		"access_token": "cc6d1a21-2bcc-462e-9e04-06b7352cae83",
-		"tp_access_token": "0ce7891c-d2e8-4714-b8e4-0a9e4f65215b"
-	}
+	"result": true
 }
 ```
 <table data-tablesaw-sortable>
@@ -92,23 +75,8 @@
         </tr>
 		<tr>
             <td>result</td>
-            <td></td>
-            <td>返回的实际内容</td>
-        </tr>
-		<tr>
-            <td>enterprise_name</td>
-            <td>字符型</td>
-            <td>商户的名称</td>
-        </tr>
-		<tr>
-            <td>access_token</td>
-            <td>字符型</td>
-            <td>登录的token，该token在所有的非登录接口中都要使用，作为身份认证</td>
-        </tr>
-		<tr>
-            <td>tp_access_token</td>
-            <td>字符型</td>
-            <td>嵌入页面使用的token</td>
+            <td>布尔型</td>
+            <td>true为成功，false为失败或该优惠券已经被使用</td>
         </tr>
     </thead>
 <table>

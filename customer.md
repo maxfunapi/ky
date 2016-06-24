@@ -1,10 +1,10 @@
-# 登录
+# 创建用户（电话号码）
 ```
-	用于商户登录，并获取访问其他接口使用的token，在调用其他接口时都必须先获取token
+	该接口用于创建用户
 ```
 ## URL
 ```	
-   {BASE_URL}/services/tp/oauth
+   {BASE_URL}/services/tp/customer
 ```
 ## Method
 ```	
@@ -13,14 +13,17 @@
 ## Headers
 ```
    content-type=application/json
+   authorization=bearer {access_token}
 ```
 
 ## Request
 ```
 	{
-		"username": "abc",
-		"password": "1234567",
-		"source":"kuanyi"
+		"phone_number": "13512345678",
+		"name": "测试",
+		"birthday": "1990-11-06",
+		"gender" : "male",
+		"email" :"zhangsan@maxfun.co"
 	}
 ```
 <table data-tablesaw-sortable>
@@ -32,9 +35,9 @@
             <th data-tablesaw-sortable-col>是否必填</th>
         </tr>
 		<tr>
-            <td>username</td>
+            <td>phone_number</td>
             <td>字符型</td>
-            <td>商户登录名称</td>
+            <td>手机号码</td>
             <td>是</td>
         </tr>
 		<tr>
@@ -44,10 +47,28 @@
             <td>是</td>
         </tr>
 		<tr>
-            <td>source</td>
+            <td>name</td>
             <td>字符型</td>
-            <td>登录请求来源，如“kuanyi”</td>
-            <td>是</td>
+            <td>用户昵称</td>
+            <td>否</td>
+        </tr>
+		<tr>
+            <td>birthday</td>
+            <td>字符型</td>
+            <td>生日，格式:2016-01-01</td>
+            <td>否</td>
+        </tr>
+		<tr>
+            <td>gender</td>
+            <td>字符型</td>
+            <td>性别, 只能填male或者female</td>
+            <td>否</td>
+        </tr>
+		<tr>
+            <td>email </td>
+            <td>字符型</td>
+            <td>邮箱</td>
+            <td>否</td>
         </tr>
     </thead>
 <table>
@@ -66,11 +87,7 @@
 			"duration": 180
 		}
 	},
-	"result": {
-		"enterprise_name": "满乐测试",
-		"access_token": "cc6d1a21-2bcc-462e-9e04-06b7352cae83",
-		"tp_access_token": "0ce7891c-d2e8-4714-b8e4-0a9e4f65215b"
-	}
+	"result": 134206
 }
 ```
 <table data-tablesaw-sortable>
@@ -92,23 +109,9 @@
         </tr>
 		<tr>
             <td>result</td>
-            <td></td>
-            <td>返回的实际内容</td>
-        </tr>
-		<tr>
-            <td>enterprise_name</td>
             <td>字符型</td>
-            <td>商户的名称</td>
+            <td>返回新创建的用户的ID，调用方应该保存该ID以便以后的数据对比时使用</td>
         </tr>
-		<tr>
-            <td>access_token</td>
-            <td>字符型</td>
-            <td>登录的token，该token在所有的非登录接口中都要使用，作为身份认证</td>
-        </tr>
-		<tr>
-            <td>tp_access_token</td>
-            <td>字符型</td>
-            <td>嵌入页面使用的token</td>
-        </tr>
+	
     </thead>
 <table>
