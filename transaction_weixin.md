@@ -17,29 +17,6 @@
 ```
 
 ## Request
-```
-	{
-		"open_id": "oI5VPt8uWqmqdW1Av_NvsWQgiPzA",
-		"phone_number": "17665992093",
-		"points": 1,
-		"message_flag": false,
-		"reward_points":10,
-		"price":36.0,
-		"wm_platform":"百度外卖",
-		 "product_list": [{
-			"product_id": 1,
-			"product_name": "鱼香茄子",
-			"amount": 1,
-			"unit_price": 12.0
-		},{
-			"product_id": 2,
-			"product_name": "肉末麻婆豆腐",
-			"amount": 2,
-			"unit_price": 12.0
-		}],
-		"coupon_no_list":["obdI5eLX360p","T3BpfbRNoPje"]
-	}
-```
 <table data-tablesaw-sortable>
     <thead>
         <tr>
@@ -105,8 +82,29 @@
         </tr>
     </thead>
 <table>
-
-
+```
+	{
+		"open_id": "oI5VPt8uWqmqdW1Av_NvsWQgiPzA",
+		"phone_number": "17665992093",
+		"points": 1,
+		"message_flag": false,
+		"reward_points":10,
+		"price":36.0,
+		"wm_platform":"百度外卖",
+		 "product_list": [{
+			"product_id": 1,
+			"product_name": "鱼香茄子",
+			"amount": 1,
+			"unit_price": 12.0
+		},{
+			"product_id": 2,
+			"product_name": "肉末麻婆豆腐",
+			"amount": 2,
+			"unit_price": 12.0
+		}],
+		"coupon_no_list":["obdI5eLX360p","T3BpfbRNoPje"]
+	}
+```
 ## Response
 ```
 {
