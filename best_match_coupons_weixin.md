@@ -17,7 +17,7 @@
 
 ## Request
 ```
-	 {BASE_URL}/services/tp/best_match_coupons_weixin? open_id=openid&purchase_amount=100
+	 {BASE_URL}/services/tp/best_match_coupons_weixin?open_id=openid&purchase_amount=100
 ```
 <table data-tablesaw-sortable>
     <thead>
