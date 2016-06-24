@@ -42,12 +42,13 @@
         </tr>
     </thead>
 <table>
-
-{
-	"username": "abc",
-	"password": "1234567",
-	"source":"kuanyi"
-}
+```
+	{
+		"username": "abc",
+		"password": "1234567",
+		"source":"kuanyi"
+	}
+```
 
 ## Response
 ```
