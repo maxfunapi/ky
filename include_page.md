@@ -4,13 +4,13 @@
 ```
 # 移动端
 ```
-	测试环境http://qa.maxfun.co/mobile?page={page}&token={token}&style={style}
-	正式： https://tp.maxfun.co/mobile?page={page}&token={token}&style={style}
+	测试环境:http://qa.maxfun.co/mobile?page={page}&token={token}&style={style}
+	正式:https://tp.maxfun.co/mobile?page={page}&token={token}&style={style}
 ```
 # PC端：
 ```
-	测试环境http://qa.maxfun.co/pc?page={page}&token={token}&style={style}
-	正式： https://tp.maxfun.co/pc?page={page}&token={token}&style={style}
+	测试环境: http://qa.maxfun.co/pc?page={page}&token={token}&style={style}
+	正式:https://tp.maxfun.co/pc?page={page}&token={token}&style={style}
 ```
 <table data-tablesaw-sortable>
     <thead>
