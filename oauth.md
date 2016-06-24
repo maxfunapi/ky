@@ -1,13 +1,15 @@
 # 登录
-
-用于商户登录，并获取访问其他接口使用的token，在调用其他接口时都必须先获取token
-
+```
+	用于商户登录，并获取访问其他接口使用的token，在调用其他接口时都必须先获取token
+```
 ## URL
+```	
    {BASE_URL}/services/tp/oauth
-
+```
 ## Method
+```	
    POST
-
+```
 ## Headers
 ```
    content-type=application/json
