@@ -25,56 +25,55 @@
             <th data-tablesaw-sortable-col>描述</th>
             <th data-tablesaw-sortable-col>是否必填</th>
         </tr>
-		<tr>
+	<tr>
             <td>open_id</td>
             <td>字符型</td>
             <td>如果传入的open_id存在，会新创建一个用户</td>
             <td>是</td>
         </tr>
-		<tr>
+	<tr>
             <td>phone_number</td>
             <td>字符型</td>
             <td>如果传入了手机号码，会优先查询手机号码的用户，如果用户找不到，就会用openid查询用户</td>
             <td>否</td>
         </tr>
-		<tr>
+	<tr>
             <td>points</td>
             <td>字符型</td>
-            <td></td>
+            <td>积分</td>
             <td>是</td>
         </tr>
-		<tr>
+	<tr>
             <td>message_flag</td>
             <td>字符型</td>
             <td>当为true，积分成功后会给该用户推送一条积分通知信息；false则不会</td>
             <td>是</td>
         </tr>
-		<tr>
+	<tr>
             <td>reward_points</td>
             <td>数字型</td>
             <td>使用积分抵扣金额</td>
             <td>否</td>
         </tr>
-		<tr>
+	<tr>
             <td>price</td>
             <td>数字型</td>
             <td>订单总金额</td>
             <td>否</td>
         </tr>
-
-		<tr>
+	<tr>
             <td>wm_platform</td>
             <td>字符型</td>
             <td>外卖平台名称， 百度外卖、美团外卖...，请保持各外卖平台名称统一。</td>
             <td>否</td>
         </tr>
-		<tr>
+	<tr>
             <td>product_list</td>
             <td>数组</td>
             <td>购买菜品明细列表</td>
             <td>是</td>
         </tr>
-		<tr>
+	<tr>
             <td>coupon_no_list</td>
             <td>数组</td>
             <td>优惠券编号列表</td>
