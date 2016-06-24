@@ -73,7 +73,7 @@
   * [消费（微信ID）](https://github.com/maxfunapi/ky/blob/master/transaction_weixin.md)
   * [创建用户（电话号码）](https://github.com/maxfunapi/ky/blob/master/customer.md)
   * [创建用户（微信）](https://github.com/maxfunapi/ky/blob/master/customer_weixin.md)
-  * [获取最合适的优惠券（电话号码）](https://github.com/maxfunapi/ky/blob/masterbest_match_coupons.md)
+  * [获取最合适的优惠券（电话号码）](https://github.com/maxfunapi/ky/blob/master/best_match_coupons.md)
   * [获取最合适的优惠券（微信ID）](https://github.com/maxfunapi/ky/blob/master/best_match_coupons_weixin.md)
   * [使用优惠券](https://github.com/maxfunapi/ky/blob/master/use_coupon.md)
   * [获取用户当前积分（电话号码）](https://github.com/maxfunapi/ky/blob/master/get_customer_by_phone_number.md)
