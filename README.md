@@ -68,18 +68,18 @@
   * 关于身份认证：登录接口会返回一个access token，在调用其他接口时必须把token放在header里面，不传token会报错。
   
 ### 接口说明
-  * [登录获取token](https://github.com/maxfunapi/api/blob/master/create_merchant.md)
-  * [消费（电话号码](https://github.com/maxfunapi/api/blob/master/get_access_token.md)
-  * [消费（微信ID）](https://github.com/maxfunapi/api/blob/master/syn_transaction.md)
-  * [创建用户（电话号码）](https://github.com/maxfunapi/api/blob/master/import_history.md)
-  * [创建用户（微信）](https://github.com/maxfunapi/api/blob/master/page_embed.md)
-  * [获取最合适的优惠券（电话号码）](https://github.com/maxfunapi/api/blob/master/calculate_data.md)
-  * [获取最合适的优惠券（微信ID）](https://github.com/maxfunapi/api/blob/master/calculate_data.md)
-  * [使用优惠券](https://github.com/maxfunapi/api/blob/master/calculate_data.md)
-  * [获取用户当前积分（电话号码）](https://github.com/maxfunapi/api/blob/master/calculate_data.md)
-  * [获取用户当前积分（微信）](https://github.com/maxfunapi/api/blob/master/calculate_data.md)
-  * [取消消费接口](https://github.com/maxfunapi/api/blob/master/calculate_data.md)
-  * [创建商户接口](https://github.com/maxfunapi/api/blob/master/calculate_data.md)
-  * [页面嵌入](https://github.com/maxfunapi/api/blob/master/calculate_data.md)
+  * [登录获取token](https://github.com/maxfunapi/ky/blob/master/create_merchant.md)
+  * [消费（电话号码](https://github.com/maxfunapi/ky/blob/master/get_access_token.md)
+  * [消费（微信ID）](https://github.com/maxfunapi/ky/blob/master/syn_transaction.md)
+  * [创建用户（电话号码）](https://github.com/maxfunapi/ky/blob/master/import_history.md)
+  * [创建用户（微信）](https://github.com/maxfunapi/ky/blob/master/page_embed.md)
+  * [获取最合适的优惠券（电话号码）](https://github.com/maxfunapi/ky/blob/master/calculate_data.md)
+  * [获取最合适的优惠券（微信ID）](https://github.com/maxfunapi/ky/blob/master/calculate_data.md)
+  * [使用优惠券](https://github.com/maxfunapi/ky/blob/master/calculate_data.md)
+  * [获取用户当前积分（电话号码）](https://github.com/maxfunapi/ky/blob/master/calculate_data.md)
+  * [获取用户当前积分（微信）](https://github.com/maxfunapi/ky/blob/master/calculate_data.md)
+  * [取消消费接口](https://github.com/maxfunapi/ky/blob/master/calculate_data.md)
+  * [创建商户接口](https://github.com/maxfunapi/ky/blob/master/calculate_data.md)
+  * [页面嵌入](https://github.com/maxfunapi/ky/blob/master/calculate_data.md)
 
 
