@@ -43,10 +43,10 @@
 
 # Demo展示
 
-* 移动端数据魔方（https://tp.maxfun.co/mobile?style=1&page=1&token=123456）
+* 移动端数据魔方https://tp.maxfun.co/mobile?style=1&page=1&token=123456
 
 <img src="http://7xlef9.com1.z0.glb.clouddn.com/api/mobile.png"></img>
  
-* PC端数据魔方 https://tp.maxfun.co/pc?style=1&page=1&token=123456）
+* PC端数据魔方 https://tp.maxfun.co/pc?style=1&page=1&token=123456
  
 <img src="http://7xlef9.com1.z0.glb.clouddn.com/api/pc.png"></img>
