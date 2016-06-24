@@ -71,7 +71,7 @@
             <td>否</td>
         </tr>
     </thead>
-<table>
+</table>
 
 
 ## Response
