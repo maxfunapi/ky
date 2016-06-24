@@ -43,6 +43,12 @@
     </thead>
 <table>
 
+{
+	"username": "abc",
+	"password": "1234567",
+	"source":"kuanyi"
+}
+
 ## Response
 ```
 {
@@ -57,9 +63,9 @@
 		}
 	},
 	"result": {
-	"enterprise_name": "满乐测试",
-	"access_token": "cc6d1a21-2bcc-462e-9e04-06b7352cae83",
-	"tp_access_token": "0ce7891c-d2e8-4714-b8e4-0a9e4f65215b"
+		"enterprise_name": "满乐测试",
+		"access_token": "cc6d1a21-2bcc-462e-9e04-06b7352cae83",
+		"tp_access_token": "0ce7891c-d2e8-4714-b8e4-0a9e4f65215b"
 	}
 }
 ```
