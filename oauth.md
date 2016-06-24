@@ -23,22 +23,22 @@
             <th data-tablesaw-sortable-col>是否必填</th>
         </tr>
 		<tr>
-            <td>username</th>
-            <td>字符型</th>
-            <td>商户登录名称</th>
-            <td>是</th>
+            <td>username</td>
+            <td>字符型</td>
+            <td>商户登录名称</td>
+            <td>是</td>
         </tr>
 		<tr>
-            <td>password</th>
-            <td>字符型</th>
-            <td>密码</th>
-            <td>是</th>
+            <td>password</td>
+            <td>字符型</td>
+            <td>密码</td>
+            <td>是</td>
         </tr>
 		<tr>
-            <td>source</th>
-            <td>字符型</th>
-            <td>登录请求来源，如“kuanyi”</th>
-            <td>是</th>
+            <td>source</td>
+            <td>字符型</td>
+            <td>登录请求来源，如“kuanyi”</td>
+            <td>是</td>
         </tr>
     </thead>
 <table>
