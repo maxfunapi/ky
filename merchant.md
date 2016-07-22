@@ -12,8 +12,7 @@
 ```
 ## Headers
 ```
-   content-type=application/json
-   authorization=bearer {access_token}
+content-type=application/json
 ```
 
 ## Request
