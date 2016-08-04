@@ -19,13 +19,10 @@ content-type=application/json
 ```
 	{
 		"merchant_id": "10087",
-		"merchant_name": "alipp测试2",
-		"merchant_address": "深圳南山科技园",
-		"merchant_city": "深圳",
+		"merchant_name": "麻辣烫",
 		"create_time": "2016-03-24 17:21:40",
 		"password":"123456",
 		"login_name":"alipptest2",
-		"contact_number":"13800138000",
 		"merchant_group_id":246
 	 }
 ```
@@ -53,13 +50,13 @@ content-type=application/json
             <td>merchant_address</td>
             <td>字符型</td>
             <td>地址</td>
-            <td>是</td>
+            <td>否</td>
         </tr>
 		<tr>
             <td>merchant_city</td>
             <td>字符型</td>
             <td>城市</td>
-            <td>是</td>
+            <td>否</td>
         </tr>
 		<tr>
             <td>password</td>
@@ -77,7 +74,7 @@ content-type=application/json
             <td>contact_number</td>
             <td>字符型</td>
             <td>联系电话</td>
-            <td>是</td>
+            <td>否</td>
         </tr>
 		<tr>
             <td>merchant_group_id</td>
