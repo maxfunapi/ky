@@ -20,7 +20,6 @@ content-type=application/json
 	{
 		"merchant_id": "10087",
 		"merchant_name": "麻辣烫",
-		"create_time": "2016-03-24 17:21:40",
 		"password":"123456",
 		"login_name":"alipptest2",
 		"merchant_group_id":246
@@ -46,19 +45,7 @@ content-type=application/json
             <td>商户名称</td>
             <td>是</td>
         </tr>
-		<tr>
-            <td>merchant_address</td>
-            <td>字符型</td>
-            <td>地址</td>
-            <td>否</td>
-        </tr>
-		<tr>
-            <td>merchant_city</td>
-            <td>字符型</td>
-            <td>城市</td>
-            <td>否</td>
-        </tr>
-		<tr>
+	<tr>
             <td>password</td>
             <td>字符型</td>
             <td>密码</td>
@@ -86,6 +73,18 @@ content-type=application/json
             <td>create_time</td>
             <td>字符型</td>
             <td>商户创建时间 格式为yyyy-MM-dd HH:mm:ss</td>
+            <td>否</td>
+        </tr>
+        	<tr>
+            <td>merchant_address</td>
+            <td>字符型</td>
+            <td>地址</td>
+            <td>否</td>
+        </tr>
+	<tr>
+            <td>merchant_city</td>
+            <td>字符型</td>
+            <td>城市</td>
             <td>否</td>
         </tr>
     </thead>
